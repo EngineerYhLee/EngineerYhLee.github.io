@@ -14,7 +14,7 @@
 docs:
   - title: AI
     children:
-      - title: "이론"
+      - title: "기본이론"
         url: /categories/ai/basic
         category: "AI/Basic"
 
