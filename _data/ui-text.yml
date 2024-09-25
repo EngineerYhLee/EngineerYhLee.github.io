@@ -12,7 +12,7 @@ en: &DEFAULT_EN
   pagination_next            : "Next"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
-  menu_label                 : "Toggle menu"
+  menu_label                 : "Categories"
   search_label               : "Toggle search"
   toc_label                  : "On this page"
   ext_link_label             : "Direct link"
@@ -27,7 +27,7 @@ en: &DEFAULT_EN
   comments_title             : "Comments"
   more_label                 : "Learn more"
   related_label              : "You may also enjoy"
-  follow_label               : "Follow:"
+  follow_label               : ""
   feed_label                 : "Feed"
   powered_by                 : "Powered by"
   website_label              : "Website"
@@ -57,6 +57,8 @@ en-CA:
 en-GB:
   <<: *DEFAULT_EN
 en-AU:
+  <<: *DEFAULT_EN
+ko_KR:
   <<: *DEFAULT_EN
 
 # Spanish

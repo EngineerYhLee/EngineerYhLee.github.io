@@ -12,20 +12,15 @@
   #   url: /sitemap/
 
 docs:
-  - title: Category1
+  - title: AI
     children:
-      - title: "Menu1"
-        url: /post
-      - title: "Menu2"
-        url: /post
-      - title: "Menu3"
-        url: /post
+      - title: "이론"
+        url: /categories/ai/basic
+        category: "AI/Basic"
 
-  - title: Category2
+  - title: Test Category
     children:
-      - title: "Menu1"
-        url: /post
-      - title: "Menu2"
-        url: /post
-      - title: "Menu3"
-        url: /post
+      - title: "Test"
+        url: /categories/test/
+        category: "test"
+
