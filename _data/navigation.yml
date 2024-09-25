@@ -12,15 +12,83 @@
   #   url: /sitemap/
 
 docs:
-  - title: AI
+  - title: "AI 기초"
+    category: "AIFundamentals"
     children:
-      - title: "기본이론"
-        url: /categories/ai/basic
-        category: "AI/Basic"
+      - title: "기본 개념"
+        url: /categories/BasicConcepts
+        category: "BasicConcepts"
+      - title: "통계학 기초"
+        url: /categories/StatisticalFoundations
+        category: "StatisticalFoundations"
 
-  - title: Test Category
+  - title: "머신러닝"
+    category: "MachineLearning"
     children:
-      - title: "Test"
-        url: /categories/test/
-        category: "test"
+      - title: "지도 학습"
+        url: /categories/SupervisedLearning
+        category: "SupervisedLearning"
+      - title: "비지도 학습"
+        url: /categories/UnsupervisedLearning
+        category: "UnsupervisedLearning"
+      - title: "강화 학습"
+        url: /categories/ReinforcementLearning
+        category: "ReinforcementLearning"
 
+  - title: "딥러닝"
+    category: "DeepLearning"
+    children:
+      - title: "신경망 기초"
+        url: /categories/NeuralNetworks
+        category: "NeuralNetworks"
+      - title: "CNN"
+        url: /categories/CNN
+        category: "CNN"
+      - title: "Transformer"
+        url: /categories/Transformers
+        category: "Transformers"
+
+  - title: "알고리즘"
+    category: "Algorithms"
+    children:
+      - title: "선형 회귀"
+        url: /categories/LinearRegression
+        category: "LinearRegression"
+      - title: "로지스틱 회귀"
+        url: /categories/LogisticRegression
+        category: "LogisticRegression"
+      - title: "결정 트리"
+        url: /categories/DecisionTrees
+        category: "DecisionTrees"
+      - title: "SVM"
+        url: /categories/SVM
+        category: "SVM"
+      - title: "K-Means"
+        url: /categories/KMeans
+        category: "KMeans"
+
+  - title: "컴퓨터비전"
+    category: "CV"
+    children:
+      - title: "이미지 처리 기초"
+        url: /categories/ImageProcessingBasics
+        category: "ImageProcessingBasics"
+      - title: "객체 감지"
+        url: /categories/ObjectDetection
+        category: "ObjectDetection"
+      - title: "이미지 분할"
+        url: /categories/ImageSegmentation
+        category: "ImageSegmentation"
+      - title: "이미지 생성"
+        url: /categories/ImageGeneration
+        category: "ImageGeneration"
+
+  - title: "연구분야"
+    category: "Research"
+    children:
+      - title: "Image-To-Image Translation"
+        url: /categories/ImageToImageTranslation
+        category: "ImageToImageTranslation"
+      - title: "Robust Object Detection"
+        url: /categories/RobustObjectDetection
+        category: "RobustObjectDetection"

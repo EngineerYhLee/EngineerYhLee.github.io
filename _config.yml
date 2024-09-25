@@ -24,7 +24,7 @@ title                    : "Simply Guide"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Simply Guide"
-description              : "AI Simply Guide"
+description              : "AI 분야 학습과 연구를 기록하고 공유합니다."
 url                      : https://simply-guide.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # "/EngineerYhLee/EngineerYhLee.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

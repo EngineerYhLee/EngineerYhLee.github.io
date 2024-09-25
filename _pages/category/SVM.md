@@ -1,8 +1,8 @@
 ---
 layout: category
-title: Test
-taxonomy: test
-permalink: /categories/test/
+title: "SVM"
+taxonomy: SVM
+permalink: /categories/SVM
 author_profile: false
 sidebar:
   nav: "docs"

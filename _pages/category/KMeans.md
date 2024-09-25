@@ -1,8 +1,8 @@
 ---
 layout: category
-title: AI Basic
-taxonomy: AI/Basic
-permalink: /categories/ai/basic
+title: "K-Means"
+taxonomy: KMeans
+permalink: /categories/KMeans
 author_profile: false
 sidebar:
   nav: "docs"
