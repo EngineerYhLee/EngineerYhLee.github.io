@@ -1,18 +1,28 @@
 ---
 published: true
 title: "퍼셉트론(Perceptron)"
+description: "퍼셉트론의 기본 개념과 구조, 동작 원리, 학습 방법, 그리고 한계점을 상세히 설명합니다. 인공 신경망의 기초가 되는 이 모델의 역사적 의의와 현대 딥러닝으로의 발전 과정을 이해할 수 있습니다."
+header:
+#  image: /assets/images/Perceptron-unit.png
+  teaser: /assets/images/Perceptron-unit.png
+  og_image: /assets/images/Perceptron-unit.png
+  image_description: "Perceptron Units"
 date: 2024-09-25
-last_modified_at: 2024-09-25
+last_modified_at: 2024-09-29
 toc: true
 toc_sticky: true
 use_math: true
 categories:
   - NeuralNetworks
 tags:
-  - 머신러닝
-  - 딥러닝
+  - DeepLearning
 ---
-퍼셉트론은 인공 신경망의 가장 기본적인 구성 요소로, 단순한 선형 분류 문제를 해결하는 모델입니다. 1958년 프랭크 로젠블라트(Frank Rosenblatt)에 의해 제안되었으며, 생물학적인 뉴런의 작동 방식을 본떠 만들어졌습니다. 퍼셉트론은 여러 개의 입력 값을 받아 이들의 가중합을 계산하고, 활성화 함수(주로 계단 함수)를 통해 이진 분류를 수행합니다.
+퍼셉트론은 인공 신경망의 가장 기본적인 구성 요소로, 단순한 선형 분류 문제를 해결하는 모델입니다. 
+
+1958년 프랭크 로젠블라트(Frank Rosenblatt)에 의해 제안되었으며, 생물학적인 뉴런의 작동 방식을 본떠 만들어졌습니다. 퍼셉트론은 여러 개의 입력 값을 받아 이들의 가중합을 계산하고, 활성화 함수(주로 계단 함수)를 통해 이진 분류를 수행합니다.
+
+![Perceptron Units]({{ site.url }}{{ site.baseurl }}/assets/images/Perceptron-unit.png)
+
 
 ## 퍼셉트론의 기본 구조
 
@@ -26,7 +36,7 @@ tags:
 
 4. **가중합(Summation)**: 퍼셉트론은 입력 값에 가중치를 곱한 후 이를 모두 더한 값을 계산합니다. 이 값은 다음과 같이 표현됩니다:
 
-   $z = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b$
+   $$z = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b$$
 
    즉, 각 입력의 가중합을 구하는 것입니다.
 
@@ -42,6 +52,7 @@ tags:
   $$
 
    이 함수는 퍼셉트론이 선형 결정 경계를 기준으로 데이터를 두 개의 클래스로 나누는 것을 의미합니다.
+
 
 ## 퍼셉트론의 동작 원리
 
@@ -64,6 +75,51 @@ tags:
    여기서 $\eta$는 학습률(learning rate), $y$는 실제 출력값, $\hat{y}$는 퍼셉트론의 예측값입니다. 학습률은 가중치 업데이트의 크기를 조절하는 중요한 하이퍼파라미터입니다. 오차가 크면 가중치가 더 크게 조정되고, 오차가 작으면 작은 범위로 조정됩니다.
 
 5. **반복**: 이 과정을 여러 번 반복하여 가중치가 최적화되도록 합니다.
+
+## 퍼셉트론의 수식
+
+퍼셉트론을 수식으로 표현하면 아래와 같이 표현할 수 있습니다.
+
+1. **퍼셉트론의 가중합 (Weighted Sum)**:
+
+   $$
+   z = \sum_{i=1}^n w_i x_i + b
+   $$
+
+   여기서 $w_i$는 각 입력의 가중치, $x_i$는 입력값, $b$는 편향을 나타냅니다.
+
+2. **퍼셉트론의 출력**:
+
+   $$
+   y = f(z) = f\left(\sum_{i=1}^n w_i x_i + b\right)
+   $$
+
+3. **업데이트 규칙**:
+
+   $$
+   w_i \leftarrow w_i + \Delta w_i
+   $$
+
+   여기서 $\Delta w_i$는 다음과 같이 계산됩니다:
+
+   $$
+   \Delta w_i = \eta (y - \hat{y}) x_i
+   $$
+
+   $\eta$는 학습률, $y$는 실제 출력값, $\hat{y}$는 퍼셉트론의 예측값입니다.
+
+4. **편향 업데이트 규칙**:
+
+   $$
+   b \leftarrow b + \Delta b
+   $$
+
+   여기서 $\Delta b$는 다음과 같이 계산됩니다:
+
+   $$
+   \Delta b = \eta (y - \hat{y})
+   $$
+
 
 ## 퍼셉트론의 한계
 
