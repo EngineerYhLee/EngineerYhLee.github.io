@@ -17,10 +17,10 @@ tags:
   - DeepLearning
   - GAN
   - GenerativeModel
+  - PaperReview
 ---
 ## 논문에 대해서
-**Generative Adversarial Networks (GANs)**는 2014년 Ian Goodfellow에 의해 처음 제안된 이후, 머신러닝과 딥러닝 분야에서 혁신적인 발전을 이루어냈습니다. 
-
+**Generative Adversarial Networks (GANs)**는 2014년 Ian Goodfellow에 의해 처음 제안된 이후, 머신러닝과 딥러닝 분야에서 혁신적인 발전을 이루어냈습니다.
 GAN은 데이터 생성의 새로운 방법을 열었을 뿐만 아니라, 이미지 생성, 데이터 증강, 스타일 변환, 텍스트 생성, 의료 이미지 분석 등 다양한 분야에서 실질적인 성과를 보이고 있습니다.
 
 GAN의 중요한 기여는 두 네트워크 간의 적대적 학습(adversarial learning) 구조를 통해 복잡한 데이터 분포를 효과적으로 모델링할 수 있다는 점입니다. 특히, 복잡한 이미지나 영상 데이터를 샘플링할 수 있는 능력은 기존의 생성 모델을 뛰어넘는 성능을 보여주고 있습니다.

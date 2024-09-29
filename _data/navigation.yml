@@ -22,9 +22,9 @@ docs:
   - title: "Math"
     category: "Math"
     children:
-      - title: "Statistical Foundations"
-        url: /categories/StatisticalFoundations
-        category: "StatisticalFoundations"
+      - title: "Statistics"
+        url: /categories/Statistics
+        category: "Statistics"
 
 
 #  - title: "머신러닝"

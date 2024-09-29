@@ -16,8 +16,7 @@ categories:
 tags:
   - DeepLearning
 ---
-퍼셉트론은 인공 신경망의 가장 기본적인 구성 요소로, 단순한 선형 분류 문제를 해결하는 모델입니다. 
-
+퍼셉트론은 인공 신경망의 가장 기본적인 구성 요소로, 단순한 선형 분류 문제를 해결하는 모델입니다.
 1958년 프랭크 로젠블라트(Frank Rosenblatt)에 의해 제안되었으며, 생물학적인 뉴런의 작동 방식을 본떠 만들어졌습니다. 퍼셉트론은 여러 개의 입력 값을 받아 이들의 가중합을 계산하고, 활성화 함수(주로 계단 함수)를 통해 이진 분류를 수행합니다.
 
 ![Perceptron Units]({{ site.url }}{{ site.baseurl }}/assets/images/Perceptron-unit.png)
