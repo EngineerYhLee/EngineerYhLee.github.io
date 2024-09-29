@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "신경망 기초"
+title: "Neural Networks"
 taxonomy: NeuralNetworks
 permalink: /categories/NeuralNetworks
 author_profile: false

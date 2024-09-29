@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "통계학 기초"
+title: "Statistical Foundations"
 taxonomy: StatisticalFoundations
 permalink: /categories/StatisticalFoundations
 author_profile: false
