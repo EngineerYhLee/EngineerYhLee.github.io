@@ -108,19 +108,19 @@ social:
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : G-FYKGEDF0XG
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
 author:
   name             : "YH Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Software Engineer"
-#  location         : "Korea"
-  email            :
+  bio              : "Software Engineer & AI researcher"
+  location         : "Republic of Korea"
+  email            : engineer.yh.lee@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

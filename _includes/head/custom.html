@@ -3,3 +3,11 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <link rel="icon" href="/assets/icon/favicon.ico" />
 <!-- end custom head snippets -->
+
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
+
+<!--  SEO  -->
+<meta name="naver-site-verification" content="6d6c767f3721944ba3ed3c3adb8e3c22f95cc1df" />
+<meta name="yandex-verification" content="2d6396c82c726321" />

@@ -32,3 +32,4 @@ _asset_bundler_cache
 _site
 
 yarn-error.log
+yarn.lock
