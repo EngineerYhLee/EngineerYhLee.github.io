@@ -1,10 +1,12 @@
 require 'yaml'
+require 'fileutils'
 
 # navigation.yml 파일 읽기
 nav_data = YAML.load_file('_data/navigation.yml')
 
-# _pages 디렉토리가 없으면 생성
-Dir.mkdir('_pages') unless Dir.exist?('_pages')
+# _pages/category 디렉토리 비우고 재생성
+FileUtils.rm_rf('_pages/category')
+FileUtils.mkdir_p('_pages/category')
 
 nav_data['docs'].each do |section|
   section['children'].each do |item|

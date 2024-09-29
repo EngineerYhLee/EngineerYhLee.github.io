@@ -46,6 +46,9 @@ docs:
       - title: "Neural Networks"
         url: /categories/NeuralNetworks
         category: "NeuralNetworks"
+      - title: "GAN"
+        url: /categories/GAN
+        category: "GAN"
 #      - title: "CNN"
 #        url: /categories/CNN
 #        category: "CNN"

@@ -3,7 +3,6 @@ published: true
 title: "퍼셉트론(Perceptron)"
 description: "퍼셉트론의 기본 개념과 구조, 동작 원리, 학습 방법, 그리고 한계점을 상세히 설명합니다. 인공 신경망의 기초가 되는 이 모델의 역사적 의의와 현대 딥러닝으로의 발전 과정을 이해할 수 있습니다."
 header:
-#  image: /assets/images/Perceptron-unit.png
   teaser: /assets/images/Perceptron-unit.png
   og_image: /assets/images/Perceptron-unit.png
   image_description: "Perceptron Units"
