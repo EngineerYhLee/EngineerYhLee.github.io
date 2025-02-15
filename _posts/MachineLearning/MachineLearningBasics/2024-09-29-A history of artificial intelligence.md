@@ -12,9 +12,9 @@ toc: true
 toc_sticky: true
 use_math: true
 categories:
-  - BasicConcepts
+  - MachineLearningBasics
 tags:
-  - AIFundamentals
+  - MachineLearningBasics
 ---
 ## 시작하며 
 인공지능(AI)은 2024년 현재 가장 각광받는 기술 분야 중 하나로, 우리의 삶과 사회를 빠르게 변화시키고 있습니다.

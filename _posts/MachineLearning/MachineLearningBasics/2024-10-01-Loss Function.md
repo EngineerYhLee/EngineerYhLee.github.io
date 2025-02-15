@@ -12,9 +12,9 @@ toc: true
 toc_sticky: true
 use_math: true
 categories:
-  - BasicConcepts
+  - MachineLearningBasics
 tags:
-  - AIFundamentals
+  - MachineLearningBasics
 ---
 ## 손실함수(Loss Function)란 무엇인가?
 손실함수(Loss Function)는 머신러닝과 딥러닝에서 매우 중요한 개념으로, 모델이 예측한 출력값과 실제 정답값 간의 차이를 측정하는 데 사용됩니다. 손실함수의 값은 모델이 얼마나 잘못 예측했는지를 나타내며, 이 값이 작을수록 모델의 예측이 정확하다는 것을 의미합니다.

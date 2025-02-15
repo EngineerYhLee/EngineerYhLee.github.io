@@ -1,8 +1,8 @@
 ---
 layout: category
 title: "Basic Concepts"
-taxonomy: BasicConcepts
-permalink: /categories/BasicConcepts
+taxonomy: TransformerBasics
+permalink: /categories/TransformerBasics
 author_profile: false
 sidebar:
   nav: "docs"

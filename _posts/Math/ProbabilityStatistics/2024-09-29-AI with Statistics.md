@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 use_math: true
 categories:
-  - Statistics
+  - ProbabilityStatistics
 tags:
   - Math
 ---
