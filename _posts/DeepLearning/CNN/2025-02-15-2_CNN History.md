@@ -1,13 +1,13 @@
 ---
 published: true  
-title: "CNN(Convolutional Neural Networks)의 역사와 발전 과정, 주요 모델들"  
+title: "(2) CNN(Convolutional Neural Networks)의 역사와 발전 과정, 주요 모델들"  
 description: "CNN의 역사와 발전 과정, 주요 모델들을 살펴봅니다."  
 header:  
   teaser: /assets/images/04_LeNet-5.png  
   og_image: /assets/images/04_LeNet-5.png  
   image_description: "CNN"  
 date: 2025-02-15  
-last_modified_at: 2025-02-15  
+last_modified_at: 2025-02-15 19:00:00
 toc: true  
 toc_sticky: true  
 use_math: true  
@@ -18,13 +18,13 @@ tags:
   - CNN  
   - History  
 ---
-# CNN의 정의와 역사, 발전 과정
+이번 포스팅에서는 CNN의 역사와 발전 과정, 주요 모델들을 살펴봅니다.
 
-**CNN의 정의**  
-CNN(Convolutional Neural Networks)은 이미지와 같은 2차원 데이터를 효과적으로 처리하기 위해 설계된 인공신경망의 한 종류입니다.  
-- **핵심 특징:**  
-  - **합성곱(Convolution):** 이미지의 국소적 특징(예: 선, 모서리, 질감 등)을 탐지하는 필터(커널)를 사용합니다.  
-  - **가중치 공유(Weight Sharing) & 국소 연결(Local Connectivity):** 전체 이미지에 걸쳐 동일한 필터를 적용하여 파라미터 수를 획기적으로 줄이고, 일반화 성능을 높입니다.
+## 시리즈
+
+1. [CNN(Convolutional Neural Networks) 개요]({{ site.url }}{{ site.baseurl }}/cnn/1_CNN-Basics/)
+2. [CNN(Convolutional Neural Networks)의 역사와 발전 과정, 주요 모델들]({{ site.url }}{{ site.baseurl }}/cnn/2_CNN-History/)
+<!-- 3. [CNN의 컨볼루션 커널(Convolution Kernel)의 이해와 응용]({{ site.url }}{{ site.baseurl }}/cnn/Convolution-Kernels/) -->
 
 # CNN의 역사
 
@@ -55,7 +55,7 @@ CNN은 여러 시대의 혁신적인 연구들을 통해 발전해왔습니다. 
 - **LeNet-5 등장**  
   얀 르쿤과 동료들은 LeNet-5를 비롯한 초기 CNN 모델을 개발하여, 손글씨 숫자 인식(MNIST) 등 실용적 문제에서 탁월한 성능을 입증했습니다[^1].  
 
-  - LeNet-5는 합성곱, 풀링, 완전연결층으로 구성되어 초기 응용 분야(예: 우편번호, 수표 인식)에서 널리 사용되었습니다.
+  - LeNet-5는 컨볼루션, 풀링, 완전연결층으로 구성되어 초기 응용 분야(예: 우편번호, 수표 인식)에서 널리 사용되었습니다.
   
   ![LeNet-5]({{ site.url }}{{ site.baseurl }}/assets/images/2025-02-15-CNN History/04_LeNet_5.png)
   *LeNet-5: Architecture of LeNet-5, a Convolutional Neural Network for digits recognition. Each plane is a feature map, i.e., a set of units whose weights are constrained to be identical[^1]*
@@ -63,7 +63,7 @@ CNN은 여러 시대의 혁신적인 연구들을 통해 발전해왔습니다. 
 
 ## 4. 딥러닝 혁명: AlexNet (2012년)
 - **AlexNet의 혁신:**  
-  2012년, Krizhevsky, Sutskever, Hinton 등이 발표한 **AlexNet**은 5개의 합성곱층과 3개의 완전연결층으로 구성되어 GPU를 통한 대규모 학습을 가능하게 했습니다[^5].  
+  2012년, Krizhevsky, Sutskever, Hinton 등이 발표한 **AlexNet**은 5개의 컨볼루션층과 3개의 완전연결층으로 구성되어 GPU를 통한 대규모 학습을 가능하게 했습니다[^5].  
   - **주요 기여:**  
     - **GPU 가속:** 대규모 연산을 병렬 처리하여 깊은 네트워크의 학습을 실현.  
     - **ReLU 활성화 함수:** 기울기 소실 문제를 완화하여 빠른 학습을 지원.  
@@ -116,8 +116,6 @@ The dotted shortcuts increase dimensions.[^8]*
 - **Vision Transformer (2021):**  
   Dosovitskiy 등은 Transformer를 이미지 분류에 직접 적용한 **Vision Transformer (ViT)**를 제안했습니다[^10].  
   - 이 모델은 이미지를 작은 패치로 분할한 후, 각 패치를 토큰처럼 다루어 전역적인 관계를 어텐션 메커니즘으로 학습합니다.
-- **추가 동향:**  
-  최근에는 CNN과 Transformer의 장점을 결합한 **하이브리드 모델** 및, 라벨 없는 데이터를 활용한 **자기지도 학습(Self-Supervised Learning)** 기법들이 활발히 연구되고 있습니다.
 
 ![ViT]({{ site.url }}{{ site.baseurl }}/assets/images/2025-02-15-CNN History/10_ViT.png)
 *ViT: Model overview. We split an image into fixed-size patches, linearly embed each of them, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder. In order to perform classification, we use the standard approach of adding an extra learnable “classification token” to the sequence.[^10]*
@@ -128,34 +126,14 @@ The dotted shortcuts increase dimensions.[^8]*
 
 | **모델 (연도)**         | **주요 특징**                                                                                                                                      | **파라미터 수**         | **ImageNet Top-5 정확도**             | **장단점**                                                                                          |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------------------|---------------------------------------------------------------------------------------------------|
-| **LeNet-5 (1998)**  | 2개의 합성곱+풀링 층, 2개의 완전연결 층 등 총 7계층; 주로 손글씨 숫자 인식에 사용됨                                                                       | 약 60,000개         | MNIST에서 약 99% (ImageNet 적용X)      | **장점:** 초기 실용적 CNN, 간단한 구조<br>**단점:** 복잡한 이미지 인식에는 한계                     |
-| **AlexNet (2012)**  | 5개의 합성곱 층 + 3개의 완전연결 층; ReLU, 드롭아웃, 데이터 증강 기법 도입; GPU를 통한 대규모 학습                                                                   | 약 60백만 개         | 약 84.7% (Top-5, 15.3% 오류율)          | **장점:** ImageNet 분류에서 획기적 성능 향상<br>**단점:** 모델 크기와 과적합 위험                     |
-| **VGGNet (2015)**   | 16~19개의 합성곱 층과 3개의 완전연결 층; 3×3 필터를 반복적으로 사용하여 깊은 네트워크 구성 – 단, 층이 깊어 파라미터 수와 연산량이 크게 증가                                          | 약 138백만 개        | 약 92.7% (Top-5, 7.3% 오류율)           | **장점:** 단순한 구조로 깊이의 효과 입증<br>**단점:** 계산 비용과 메모리 요구량이 높음                   |
+| **LeNet-5 (1998)**  | 2개의 컨볼루션+풀링 층, 2개의 완전연결 층 등 총 7계층; 주로 손글씨 숫자 인식에 사용됨                                                                       | 약 60,000개         | MNIST에서 약 99% (ImageNet 적용X)      | **장점:** 초기 실용적 CNN, 간단한 구조<br>**단점:** 복잡한 이미지 인식에는 한계                     |
+| **AlexNet (2012)**  | 5개의 컨볼루션 층 + 3개의 완전연결 층; ReLU, 드롭아웃, 데이터 증강 기법 도입; GPU를 통한 대규모 학습                                                                   | 약 60백만 개         | 약 84.7% (Top-5, 15.3% 오류율)          | **장점:** ImageNet 분류에서 획기적 성능 향상<br>**단점:** 모델 크기와 과적합 위험                     |
+| **VGGNet (2015)**   | 16~19개의 컨볼루션 층과 3개의 완전연결 층; 3×3 필터를 반복적으로 사용하여 깊은 네트워크 구성 – 단, 층이 깊어 파라미터 수와 연산량이 크게 증가                                          | 약 138백만 개        | 약 92.7% (Top-5, 7.3% 오류율)           | **장점:** 단순한 구조로 깊이의 효과 입증<br>**단점:** 계산 비용과 메모리 요구량이 높음                   |
 | **GoogLeNet (2014)**| Inception 모듈 도입 – 1×1, 3×3, 5×5 필터를 병렬로 적용; 22계층; 글로벌 평균 풀링 사용                                                                             | 약 6.8백만 개         | 약 93.3% (Top-5, 6.7% 오류율)           | **장점:** 효율적인 파라미터 사용과 높은 성능<br>**단점:** 모듈 구조의 복잡성                           |
-| **ResNet (2015)**   | 잔차 학습(Residual Learning)을 통한 스킵 연결 도입; 152층 이상의 초심층 네트워크 구현; 주로 3×3 합성곱 사용                                                                  | 약 60백만 개         | 약 95.5% (Top-5)                      | **장점:** 극심한 깊이에서도 안정적 학습, 우수한 성능<br>**단점:** 네트워크 깊이에 따른 계산량 증가         |
+| **ResNet (2015)**   | 잔차 학습(Residual Learning)을 통한 스킵 연결 도입; 152층 이상의 초심층 네트워크 구현; 주로 3×3 컨볼루션 사용                                                                  | 약 60백만 개         | 약 95.5% (Top-5)                      | **장점:** 극심한 깊이에서도 안정적 학습, 우수한 성능<br>**단점:** 네트워크 깊이에 따른 계산량 증가         |
 | **EfficientNet (2019)**| NAS와 복합 스케일링(Compound Scaling) 기법을 통해 깊이, 너비, 해상도를 균형 있게 확장; EfficientNet-B7은 적은 자원으로 최첨단 성능 달성                                        | 약 66백만 개         | 약 97.1% (Top-5)                      | **장점:** 적은 자원으로 최첨단 성능 달성<br>**단점:** 설계 및 튜닝 복잡성                              |
 
 *표: CNN의 주요 모델들을 요약한 비교표 (ImageNet 기준)*
-
-
-# CNN의 주요 기술요소
-
-CNN은 입력 이미지로부터 점진적으로 특징을 추출하는 계층적 처리 과정을 거칩니다. 각 단계는 다음과 같이 동작합니다:
-
-1. **합성곱(Convolution) 계층**  
-   - **역할:** 작은 필터(커널)를 이용해 에지, 색상, 질감 등 국소적 특징을 탐지합니다.  
-   - **동작:** 필터가 이미지 전체를 슬라이딩하며 각 영역과의 내적(dot product)을 계산하여 특징 맵(feature map)을 생성합니다.
-2. **활성화(Activation) 함수**  
-   - **역할:** 합성곱 결과에 비선형성을 추가하여 복잡한 패턴을 학습할 수 있게 합니다.  
-   - **주요 함수:** 주로 ReLU (f(x)=max(0, x))가 사용됩니다.
-3. **풀링(Pooling) 계층**  
-   - **역할:** 특징 맵의 공간 크기를 축소하여 계산량을 줄이고, 위치 변화에 강한 불변성을 제공합니다.  
-   - **종류:** 최대 풀링(max pooling)과 평균 풀링(average pooling)이 있으며, 일반적으로 2×2 윈도우를 사용합니다.
-4. **완전연결(Fully-Connected) 계층**  
-   - **역할:** 추출된 고수준 특징들을 하나의 벡터로 평탄화한 후 최종 분류를 수행합니다.
-5. **학습(Training)과 역전파(Backpropagation)**  
-   - **과정:** 예측과 실제 값 간의 오차(loss)를 계산한 후, 이를 네트워크 각 계층에 역전파하여 필터와 가중치를 업데이트합니다.  
-   - **최적화 기법:** 주로 확률적 경사 하강법(SGD)이나 Adam 옵티마이저가 사용됩니다.
 
 
 # CNN의 응용 분야
@@ -174,7 +152,7 @@ CNN은 입력 이미지로부터 점진적으로 특징을 추출하는 계층�
 - **적대적 공격:** 미세한 노이즈에도 민감하여 악의적 조작 이미지에 오인식할 수 있는 취약점이 존재합니다.
 - **해석 가능성:** 모델의 "블랙박스" 특성으로 인해 결정 과정 해석이 어려워, Grad-CAM 등 해석 기법이 연구되고 있습니다.
 
-# 미래 동향
+# 연구 근황
 
 - **CNN과 Transformer의 융합:** Vision Transformer(ViT)와 같은 Transformer 기반 모델 등장에 따라, CNN의 국소적 특징 추출과 Transformer의 전역적 관계 모델링을 결합한 하이브리드 모델들이 연구되고 있습니다.
 - **자기지도 학습:**  라벨이 없는 대량의 데이터를 활용해 CNN을 사전 학습하는 기법(예: SimCLR, MoCo)이 각광받으며, 적은 라벨로도 높은 성능을 발휘할 모델들이 개발되고 있습니다.

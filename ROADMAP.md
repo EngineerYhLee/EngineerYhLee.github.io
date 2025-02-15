@@ -256,7 +256,7 @@
 
 - [ ] **이미지 분할 기법 (Image Segmentation Basics)**
   - [ ] 임계값 기반 (Thresholding, Otsu 등) (Thresholding)
-  - [ ] 에지 검출 (Sobel, Canny 등) (Edge Detection)
+  - [ ] 엣지 검출 (Sobel, Canny 등) (Edge Detection)
 
 - [ ] **객체 추적 (Object Tracking)**
   - [ ] KCF, GOTURN 등 (KCF, GOTURN)
@@ -410,9 +410,11 @@
 
 ---
 
-### 5.2 합성곱 신경망 (Convolutional Neural Networks, CNN)
-- [ ] **합성곱과 풀링 (Convolution & Pooling)**
-  - [ ] 합성곱 커널 (Convolution Kernels)
+### 5.2 컨볼루션 신경망 (Convolutional Neural Networks, CNN)
+- [ ] **컨볼루션과 풀링 (Convolution & Pooling)**
+  - [X] CNN 개요 (CNN Summary)
+  - [X] CNN 역사 (CNN History)
+  - [ ] 컨볼루션 커널 (Convolution Kernels)
   - [ ] 패딩, 스트라이드 영향 (Padding & Stride)
   - [ ] 풀링 계층 (Pooling Layer)
   - [ ] 완전 연결 계층 (Fully Connected Layer)
@@ -429,8 +431,8 @@
   - [ ] EfficientNet
 
 - [ ] **고급 CNN 기법 (Advanced CNN Techniques)**
-  - [ ] 딜레이티드 합성곱 (Dilated Convolution)
-  - [ ] 그룹 합성곱, 셔플넷 (Grouped Convolution, ShuffleNet)
+  - [ ] 딜레이티드 컨볼루션 (Dilated Convolution)
+  - [ ] 그룹 컨볼루션, 셔플넷 (Grouped Convolution, ShuffleNet)
   - [ ] 어텐션 결합 (Attention Integration)
 
 ---
