@@ -57,7 +57,7 @@ CNN은 여러 시대의 혁신적인 연구들을 통해 발전해왔습니다. 
 
   - LeNet-5는 합성곱, 풀링, 완전연결층으로 구성되어 초기 응용 분야(예: 우편번호, 수표 인식)에서 널리 사용되었습니다.
   
-  ![LeNet-5]({{ site.url }}{{ site.baseurl }}/assets/images/2025-02-15-CNN History/04_LeNet-5.png)
+  ![LeNet-5]({{ site.url }}{{ site.baseurl }}/assets/images/2025-02-15-CNN History/04_LeNet5.png)
   *LeNet-5: Architecture of LeNet-5, a Convolutional Neural Network for digits recognition. Each plane is a feature map, i.e., a set of units whose weights are constrained to be identical[^1]*
 
 
