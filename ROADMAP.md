@@ -414,11 +414,11 @@
 - [ ] **컨볼루션과 풀링 (Convolution & Pooling)**
   - [X] CNN 개요 (CNN Summary)
   - [X] CNN 역사 (CNN History)
-  - [ ] 컨볼루션 커널 (Convolution Kernels)
-  - [ ] 패딩, 스트라이드 영향 (Padding & Stride)
-  - [ ] 풀링 계층 (Pooling Layer)
-  - [ ] 완전 연결 계층 (Fully Connected Layer)
-  - [ ] 컨볼루션 레이어 쌓기 (Stacked Convolution Layers)
+  - [X] 컨볼루션 레이어 (Convolutional Layer)
+  - [ ] 패딩과 스트라이드 (Padding & Stride)
+  - [ ] 풀링 레이어 (Pooling Layer)
+  - [ ] 다중 채널 (Multiple Channels)
+  - [ ] 컨볼루션 레이어 쌓기 (Stacked Convolutional Layers)
 
 - [ ] **대표 CNN 아키텍처 (Representative CNN Architectures)**
   - [ ] LeNet
