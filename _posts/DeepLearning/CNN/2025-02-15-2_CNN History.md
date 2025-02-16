@@ -24,7 +24,8 @@ tags:
 
 1. [CNN(Convolutional Neural Networks) 개요]({{ site.url }}{{ site.baseurl }}/cnn/1_CNN-Basics/)
 2. [CNN(Convolutional Neural Networks)의 역사와 발전 과정, 주요 모델들]({{ site.url }}{{ site.baseurl }}/cnn/2_CNN-History/)
-<!-- 3. [CNN의 컨볼루션 커널(Convolution Kernel)의 이해와 응용]({{ site.url }}{{ site.baseurl }}/cnn/Convolution-Kernels/) -->
+<!-- 3. [CNN의 컨볼루션 레이어(Convolution Layer)]({{ site.url }}{{ site.baseurl }}/cnn/3_Convolution-Layer/) -->
+
 
 # CNN의 역사
 
