@@ -25,10 +25,10 @@ tags:
 1. [Convolutional Neural Networks 개요]({{ site.url }}{{ site.baseurl }}/cnn/1_CNN-Basics/)
 2. [CNN의 역사와 발전 과정, 주요 모델들]({{ site.url }}{{ site.baseurl }}/cnn/2_CNN-History/)
 3. [컨볼루션 레이어(Convolutional Layer)]({{ site.url }}{{ site.baseurl }}/cnn/3_Convolution-Layer/)
-<!-- <!-- 4. [패딩(Padding)과 스트라이드(Stride)]({{ site.url }}{{ site.baseurl }}/cnn/4_Padding-and-Stride/) -->
+4. [패딩(Padding)과 스트라이드(Stride)]({{ site.url }}{{ site.baseurl }}/cnn/4_Padding-and-Stride/)
 <!-- 5. [풀링 레이어(Pooling Layer)]({{ site.url }}{{ site.baseurl }}/cnn/5_Pooling-Layers/) -->
 <!-- 6. [다중 채널(Multiple Channels)]({{ site.url }}{{ site.baseurl }}/cnn/6_Multiple-Channels/) -->
-<!-- 7. [컨볼루션 레이어 쌓기(Stacked Convolutional Layers)]({{ site.url }}{{ site.baseurl }}/cnn/7_Stacked-Convolution-Layers/) --> -->
+<!-- 7. [컨볼루션 레이어 쌓기(Stacked Convolutional Layers)]({{ site.url }}{{ site.baseurl }}/cnn/7_Stacked-Convolution-Layers/) -->
 
 ## 1. 컨볼루션 레이어(Convolutional Layer)란?
 
@@ -124,7 +124,7 @@ $$
 ## 3. 2차원 컨볼루션 레이어(2D Convolutional Layer)
 
 ### 3.1. 정의
-**2D 컨볼루션 레이어**는 이미지와 같이 가로·세로의 2차원 그리드 형태 데이터를 처리합니다. 필터 역시 $$H \times W$$ 형태를 갖고, 이미지의 각 Local Region(예: $$3 \times 3$$)에 대해서 곱셈-덧셈 연산을 수행하여 **특징 맵(feature map)**을 만듭니다.
+**2D 컨볼루션 레이어**는 이미지와 같이 가로·세로의 2차원 그리드 형태 데이터를 처리합니다. 필터 역시 $$H \times W$$ 형태를 갖고, 이미지의 각 Local Region(예: $$3 \times 3$$)에 대해서 곱셈-덧셈 연산을 수행하여 **Feature Map**을 만듭니다.
 
 - 예: RGB 이미지(채널=3) → 필터 크기 $$H \times W$$ × 채널 3 → 컨볼루션 후 하나의 출력 채널(feature map) 생성.  
   여러 필터 사용 시 **출력 채널 수**가 증가합니다.
@@ -200,7 +200,7 @@ $$
 
 ### 4.1. 행렬-벡터 곱셈을 이용한 연산 예시
 - 컨볼루션은 선형 연산자이기 때문에 행렬 곱셈으로 표현할 수 있습니다. 
-- 아래 수식은 3 × 3 입력 X를 2 × 2 커널 W와 합성곱하여 2 × 2 출력 Y를 계산한 예시입니다.
+- 아래 수식은 3 × 3 입력 X를 2 × 2 커널 W와 컨볼루션하여 2 × 2 출력 Y를 계산한 예시입니다.
 
 $$
 Y = \begin{pmatrix}

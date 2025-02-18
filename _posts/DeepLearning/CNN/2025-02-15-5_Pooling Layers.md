@@ -6,8 +6,8 @@ header:
   teaser: /assets/images/pooling_layers.png
   og_image: /assets/images/pooling_layers.png
   image_description: "Pooling Layers"
-date: 2025-02-15
-last_modified_at: 2025-02-15 22:00:00
+date: 2025-02-18
+last_modified_at: 2025-02-18 18:00:00
 toc: true
 toc_sticky: true
 use_math: true
@@ -25,7 +25,7 @@ tags:
 1. [Convolutional Neural Networks 개요]({{ site.url }}{{ site.baseurl }}/cnn/1_CNN-Basics/)
 2. [CNN의 역사와 발전 과정, 주요 모델들]({{ site.url }}{{ site.baseurl }}/cnn/2_CNN-History/)
 3. [컨볼루션 레이어(Convolutional Layer)]({{ site.url }}{{ site.baseurl }}/cnn/3_Convolution-Layer/)
-<!-- 4. [패딩(Padding)과 스트라이드(Stride)]({{ site.url }}{{ site.baseurl }}/cnn/4_Padding-and-Stride/) -->
+4. [패딩(Padding)과 스트라이드(Stride)]({{ site.url }}{{ site.baseurl }}/cnn/4_Padding-and-Stride/)
 <!-- 5. [풀링 레이어(Pooling Layer)]({{ site.url }}{{ site.baseurl }}/cnn/5_Pooling-Layers/) -->
 <!-- 6. [다중 채널(Multiple Channels)]({{ site.url }}{{ site.baseurl }}/cnn/6_Multiple-Channels/) -->
 <!-- 7. [컨볼루션 레이어 쌓기(Stacked Convolutional Layers)]({{ site.url }}{{ site.baseurl }}/cnn/7_Stacked-Convolution-Layers/) -->
@@ -145,28 +145,14 @@ s_{ij} = \left(\frac{1}{|R_{ij}|} \sum_{(a,b) \in R_{ij}} x_{ab}^p \right)^{1/p}
    - 맥스와 평균을 혼합하거나, Pooling 방식을 **학습**으로 결정하는 기법  
    - 예: PyTorch의 `AdaptiveAvgPool2d` 등은 임의의 입력을 고정된 크기로 풀링해주며, 다양한 CNN 구조에서 활용
 
----
-
-# 최신 연구 동향
-
-1. **Fractional Max-Pooling**  
-   - 고정된 커널 대신, 확률적 방식으로 풀링 영역을 결정하여 **다양한 스케일**의 정보를 학습 [^1].
-2. **Spatial Pyramid Pooling (SPP)**  
-   - 입력을 서로 다른 크기의 공간 그리드(Spatial Pyramid)로 나누어 풀링을 수행, **다중 스케일 정보**를 한 번에 추출 [^3].
-3. **All Convolutional Net**  
-   - **전부 컨볼루션**만으로 구성된 네트워크를 제안하여, 풀링 없이 **Stride**를 통해 다운샘플링 효과를 내는 방식을 사용 [^4].
-4. **Global Pooling + Fully Convolutional**  
-   - Global Pooling과 완전 컨볼루션 구조를 결합해, **입력 크기에 관계없이** 유연하게 적용 가능 (예: Network in Network, NiN [^2]).
-
-최근 연구들은 단순히 **해상도 축소** 역할을 넘어, **특징 선택(Feature Selection)**이나 **정규화(Regularization)** 효과를 극대화할 수 있는 풀링 기법을 지속적으로 모색하고 있습니다. 특히 **어텐션 메커니즘(Attention)**이나 **학습 가능한 가중치**를 결합하여, **데이터 특성에 맞춰 동적으로 정보 요약**을 수행하는 방향이 활발하게 연구되고 있습니다.
 
 ---
 
 ## 참고문헌
 
-[^1]: Graham, B. (2014). *Fractional max-pooling*. **arXiv preprint arXiv:1412.6071**.  
-[^2]: Lin, M., Chen, Q., & Yan, S. (2013). *Network in network*. **arXiv preprint arXiv:1312.4400**.  
-[^3]: He, K., Zhang, X., Ren, S., & Sun, J. (2015). *Spatial pyramid pooling in deep convolutional networks for visual recognition*. **IEEE TPAMI**, 37(9), 1904-1916.  
-[^4]: Springenberg, J. T., Dosovitskiy, A., Brox, T., & Riedmiller, M. (2014). *Striving for simplicity: The all convolutional net*. **arXiv preprint arXiv:1412.6806**.  
-[^5]: Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. (2021). **Dive into deep learning**. *arXiv preprint arXiv:2106.11342*.  
+[^1]: Graham, B. (2014). **Fractional max-pooling**. arXiv preprint arXiv:1412.6071.  
+[^2]: Lin, M., Chen, Q., & Yan, S. (2013). **Network in network**. arXiv preprint arXiv:1312.4400.  
+[^3]: He, K., Zhang, X., Ren, S., & Sun, J. (2015). **Spatial pyramid pooling in deep convolutional networks for visual recognition**. IEEE TPAMI, 37(9), 1904-1916.  
+[^4]: Springenberg, J. T., Dosovitskiy, A., Brox, T., & Riedmiller, M. (2014). **Striving for simplicity: The all convolutional net**. arXiv preprint arXiv:1412.6806.  
+[^5]: Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. (2021). **Dive into deep learning**. arXiv preprint arXiv:2106.11342.  
 [^6]: Murphy, K. P. (2012). **Machine learning: a probabilistic perspective**. MIT press.
