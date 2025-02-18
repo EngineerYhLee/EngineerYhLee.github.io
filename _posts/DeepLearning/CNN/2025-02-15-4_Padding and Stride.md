@@ -27,7 +27,7 @@ tags:
 2. [CNN의 역사와 발전 과정, 주요 모델들]({{ site.url }}{{ site.baseurl }}/cnn/2_CNN-History/)
 3. [컨볼루션 레이어(Convolutional Layer)]({{ site.url }}{{ site.baseurl }}/cnn/3_Convolution-Layer/)
 4. [패딩(Padding)과 스트라이드(Stride)]({{ site.url }}{{ site.baseurl }}/cnn/4_Padding-and-Stride/)
-<!-- 5. [풀링 레이어(Pooling Layer)]({{ site.url }}{{ site.baseurl }}/cnn/5_Pooling-Layers/) -->
+5. [풀링 레이어(Pooling Layer)]({{ site.url }}{{ site.baseurl }}/cnn/5_Pooling-Layers/)
 <!-- 6. [다중 채널(Multiple Channels)]({{ site.url }}{{ site.baseurl }}/cnn/6_Multiple-Channels/) -->
 <!-- 7. [컨볼루션 레이어 쌓기(Stacked Convolutional Layers)]({{ site.url }}{{ site.baseurl }}/cnn/7_Stacked-Convolution-Layers/) -->
 
@@ -280,7 +280,7 @@ if __name__ == "__main__":
 - **패딩=1, 스트라이드=1**: Feature Map 크기가 원본 입력(4×4)와 동일하게 유지됨
 - **패딩=1, 스트라이드=2**: Feature Map 크기가 2×2 로 작아짐(다운샘플링 효과)
 
-위 코드 결과를 보면, 패딩이 없으면 경계 정보를 일부 잃고 출력 크기가 작아지는 반면, 패딩을 주면 출력 Feature Map이 커지고 가장자리 부분에도 출력이 생기는 것을 확인할 수 있습니다. 스트라이드를 늘리면 연산 간격이 커져 출력 크기가 작아지며, 이는 **다운샘플링(downsampling)** 효과를 일으킵니다[^1] [^2].  
+위 코드 결과를 보면, 패딩이 없으면 경계 정보를 일부 잃고 출력 크기가 작아지는 반면, 패딩을 주면 출력 Feature Map이 커지고 가장자리 부분에도 출력이 생기는 것을 확인할 수 있습니다. 스트라이드를 늘리면 연산 간격이 커져 출력 크기가 작아지며, 이는 **다운샘플링(downsampling)** 효과를 일으킵니다.
 
 ---
 
