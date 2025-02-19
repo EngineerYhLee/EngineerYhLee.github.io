@@ -30,6 +30,9 @@ docs:
       - title: "Vision"
         url: /categories/3DVision
         category: "3DVision"
+      - title: "Noise Reduction"
+        url: /categories/NoiseReduction
+        category: "NoiseReduction"
 
   - title: "Machine Learning"
     category: "MachineLearning"

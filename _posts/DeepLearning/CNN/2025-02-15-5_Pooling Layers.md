@@ -3,8 +3,8 @@ published: true
 title: "[CNN] (5) 풀링 레이어(Pooling Layer)"
 description: "CNN에서 풀링 레이어의 역할과 종류, 그리고 최신 동향을 살펴봅니다."
 header:
-  teaser: /assets/images/pooling_layers.png
-  og_image: /assets/images/pooling_layers.png
+  teaser: /assets/images/max_avg_pooling.png
+  og_image: /assets/images/max_avg_pooling.png
   image_description: "Pooling Layers"
 date: 2025-02-18
 last_modified_at: 2025-02-18 18:00:00
@@ -20,7 +20,6 @@ tags:
 ---
 
 이번 포스팅에서는 CNN의 중요한 구성 요소인 **풀링 레이어(Pooling Layer)**에 대해 자세히 알아보겠습니다.  
-특히 풀링의 목적과 동작 방식, 최근에 제시되는 다양한 풀링 기법들을 [^1] [^2] [^4] [^5] 참조하여 보강해보았습니다.
 
 ## CNN 시리즈
 1. [Convolutional Neural Networks 개요]({{ site.url }}{{ site.baseurl }}/cnn/1_CNN-Basics/)
@@ -28,7 +27,7 @@ tags:
 3. [컨볼루션 레이어(Convolutional Layer)]({{ site.url }}{{ site.baseurl }}/cnn/3_Convolution-Layer/)
 4. [패딩(Padding)과 스트라이드(Stride)]({{ site.url }}{{ site.baseurl }}/cnn/4_Padding-and-Stride/)
 5. [풀링 레이어(Pooling Layer)]({{ site.url }}{{ site.baseurl }}/cnn/5_Pooling-Layers/)
-<!-- 6. [다중 채널(Multiple Channels)]({{ site.url }}{{ site.baseurl }}/cnn/6_Multiple-Channels/) -->
+6. [정규화 레이어(Normalization Layer)]({{ site.url }}{{ site.baseurl }}/cnn/6_Normalization-Layer/)
 <!-- 7. [컨볼루션 레이어 쌓기(Stacked Convolutional Layers)]({{ site.url }}{{ site.baseurl }}/cnn/7_Stacked-Convolution-Layers/) -->
 
 ---

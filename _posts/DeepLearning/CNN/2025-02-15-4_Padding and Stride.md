@@ -1,7 +1,7 @@
 ---
 published: true
 title: "[CNN] (4) 패딩(Padding)과 스트라이드(Stride)"
-description: "CNN에서 패딩과 스트라이드가 Feature Map의 크기와 학습에 미치는 영향"
+description: "컨볼루션 레이어(Convolutional Layer)에서 패딩(Padding)과 스트라이드(Stride)에 대해서 다뤄보겠습니다."
 header:
   teaser: /assets/images/need_padding.png
   og_image: /assets/images/need_padding.png
@@ -28,7 +28,7 @@ tags:
 3. [컨볼루션 레이어(Convolutional Layer)]({{ site.url }}{{ site.baseurl }}/cnn/3_Convolution-Layer/)
 4. [패딩(Padding)과 스트라이드(Stride)]({{ site.url }}{{ site.baseurl }}/cnn/4_Padding-and-Stride/)
 5. [풀링 레이어(Pooling Layer)]({{ site.url }}{{ site.baseurl }}/cnn/5_Pooling-Layers/)
-<!-- 6. [다중 채널(Multiple Channels)]({{ site.url }}{{ site.baseurl }}/cnn/6_Multiple-Channels/) -->
+6. [정규화 레이어(Normalization Layer)]({{ site.url }}{{ site.baseurl }}/cnn/6_Normalization-Layer/)
 <!-- 7. [컨볼루션 레이어 쌓기(Stacked Convolutional Layers)]({{ site.url }}{{ site.baseurl }}/cnn/7_Stacked-Convolution-Layers/) -->
 
 ## 1. 패딩(Padding)의 이해
