@@ -66,6 +66,13 @@ docs:
         url: /categories/RNN
         category: "RNN"
 
+  - title: "Anomaly Detection"
+    category: "AnomalyDetection"
+    children:
+      - title: "Anomaly Detection Basics"
+        url: /categories/AnomalyDetectionBasics
+        category: "AnomalyDetectionBasics"
+
   - title: "Medical Imaging"
     category: "MedicalImaging"
     children:

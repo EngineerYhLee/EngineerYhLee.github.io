@@ -1,13 +1,13 @@
 ---
 published: true
-title: "[논문리뷰] Generative Adversarial Nets"
+title: "[GAN] Generative Adversarial Nets 논문리뷰"
 description: "Generative Adversarial Networks (GANs)의 기본 개념과 원리, 그리고 논문에서 제안한 모델의 구조 및 실험 결과에 대한 리뷰입니다."
 header:
   teaser: /assets/images/Generative_adversarial_network.png
   og_image: /assets/images/Generative_adversarial_network.png
   image_description: "Generative adversarial network(GAN)"
 date: 2024-09-29
-last_modified_at: 2024-09-29
+last_modified_at: 2025-03-04
 toc: true
 toc_sticky: true
 use_math: true
