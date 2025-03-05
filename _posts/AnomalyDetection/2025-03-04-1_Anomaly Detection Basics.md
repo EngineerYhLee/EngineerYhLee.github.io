@@ -2,10 +2,6 @@
 published: true
 title: "[Anomaly Detection] 이상 탐지(Anomaly Detection) 개요"
 description: "이상 탐지(Anomaly Detection)에 대한 기본적인 개요를 설명합니다."
-header:
-  teaser: /assets/images/
-  og_image: /assets/images/
-  image_description: ""
 date: 2025-03-04
 last_modified_at: 2025-03-04
 

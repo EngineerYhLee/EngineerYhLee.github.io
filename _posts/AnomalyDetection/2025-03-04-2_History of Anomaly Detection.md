@@ -2,12 +2,8 @@
 published: true
 title: "[Anomaly Detection] 이상 탐지의 개념과 역사"
 description: "이상탐지(Anomaly Detection)의 개념과 역사에 대한 전반적인 내용을 설명합니다."
-header:
-  teaser: /assets/images/
-  og_image: /assets/images/
-  image_description: ""
-date: 2025-01-01
-last_modified_at: 2025-01-01
+date: 2025-03-04
+last_modified_at: 2025-03-04
 toc: true
 toc_sticky: true
 use_math: true
@@ -15,6 +11,7 @@ categories:
   - AnomalyDetectionBasics
 tags:
   - AnomalyDetection
+  - History
 ---
 
 ## 1. 이상 탐지(Anomaly Detection)의 개념
