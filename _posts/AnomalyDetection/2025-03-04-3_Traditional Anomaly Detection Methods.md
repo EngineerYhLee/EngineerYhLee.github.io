@@ -1,6 +1,6 @@
 ---
 published: true
-title: "[Anomaly Detection] 전통적인 이상 탐지 기법 (Anomaly Detection Techniques)"
+title: "[Anomaly Detection] 전통적인 이상 탐지 기법"
 description: "전통적인 이상 탐지 기법을 정리하고 설명합니다."
 date: 2025-03-05
 last_modified_at: 2025-03-05
